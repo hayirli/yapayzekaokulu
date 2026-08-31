@@ -1,0 +1,68 @@
+LOGOLAR — NEREDEN İNDİRİLİR, NASIL KOYULUR
+==========================================
+
+Bu klasöre 4 dosya koyacaksın. Dosya adlarını BİREBİR böyle yaz,
+site ve afiş otomatik gösterir. Eksik olan yerinde kesikli kutu görünür,
+site kırılmaz.
+
+PNG (şeffaf arka plan) veya SVG olsun. En az 600 px genişlik.
+
+
+ZORUNLU ÜÇLÜ (Erasmus+ 2021-2027 kuralı)
+----------------------------------------
+Ulusal Ajans'ın kuralı: 2021-2027 dönemi Erasmus+ ve ESC projelerinde
+üç logo ZORUNLU ve soldan sağa şu sırada olmalı:
+
+  1) ab-baskanligi.png
+     T.C. Dışişleri Bakanlığı — Avrupa Birliği Başkanlığı logosu
+
+  2) ulusal-ajans.png
+     Türkiye Ulusal Ajansı logosu
+
+  3) eu-cofunded.png
+     "Avrupa Birliği tarafından ortak finanse edilmektedir" amblemi
+     (Co-funded by the European Union)
+
+  Üçünün de kaynağı:  https://ua.gov.tr/kurumsal/logolar/
+  Kullanım kılavuzu:  https://www.ua.gov.tr/media/v4slvrkn/logo-kullanim-kilavuzu.pdf
+
+  AB ambleminin Türkçe sürümünü doğrudan Komisyon'dan da alabilirsin
+  (TR zip dosyasi var):
+  https://www.eacea.ec.europa.eu/grants/visual-identity/visual-identity-programming-period-2021-2027/european-flag-emblem-and-multilingual-disclaimer_en
+
+  Tüm dillerdeki indirme merkezi:
+  https://ec.europa.eu/regional_policy/information-sources/logo-download-center_en
+
+
+KURUM LOGOSU
+------------
+  4) topkapi-universitesi.png
+     Topkapı Üniversitesi logosu.
+     Üniversitenin kurumsal kimlik / basın sayfasından indir,
+     yoksa kurumsal iletişim biriminden vektörel dosyayı iste.
+
+
+DİKKAT EDİLECEK KURALLAR
+------------------------
+- Logoları yapay zekaya çizdirme, kendin yeniden renklendirme, kırpma.
+  Sadece resmi dosyayı olduğu gibi kullan. Aksi halde raporlamada
+  görünürlük ihlali sayılır.
+
+- Kendi logonun (Topkapı veya proje logosu) yüksekliği, Türkiye Ulusal
+  Ajansı logosunun yüksekliğinden fazla olamaz.
+
+- Basılı materyalde hiçbir logonun yüksekliği 1 cm'nin altına inemez.
+
+- Koyu veya baskın renkli zemin üzerinde logoların BEYAZ sürümünü kullan.
+  Sitenin alt bilgisi koyu; oraya beyaz sürüm daha iyi durur.
+  Siyah-beyaz baskı için siyah sürümü kullan.
+
+- "Avrupa Birliği tarafından ortak finanse edilmektedir" ifadesi her zaman
+  tam olarak yazılmalı ve amblemin yanında yer almalı. Sitede ve afişte
+  sorumluluk reddi metniyle birlikte zaten var.
+
+
+DOSYALARI KOYDUKTAN SONRA
+-------------------------
+Tarayıcıda index.html'i aç, logo şeridine bak. Kesikli kutu kaldıysa
+dosya adı yanlış yazılmıştır.
