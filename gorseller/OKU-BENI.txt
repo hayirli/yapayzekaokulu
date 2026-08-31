@@ -11,6 +11,6 @@ BU KLASÖRE FOTOĞRAF KOY
 DİKKAT: Katılımcı fotoğrafı kullanacaksan yazılı izin (görsel kullanım onayı) al.
 Erasmus projelerinde bu zorunlu.
 
-3) ekip-1.jpg ... ekip-4.jpg  → Ekip bölümündeki fotoğraflar.
-                     Kare (1:1) olmalı, en az 400x400 px.
-                     Fotoğraf koymazsan yerinde renkli baş harf kutusu görünür.
+3) haber-1.jpg, haber-2.jpg ...  → Haberler sayfasındaki kapak görselleri.
+                     16:9 oran, en az 800x450 px.
+                     Görsel koymazsan renkli kutu görünür, site bozulmaz.

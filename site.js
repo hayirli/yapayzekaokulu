@@ -80,3 +80,36 @@
     if (e.textContent.indexOf('yükleniyor') !== -1) e.textContent = adres;
   }
 })();
+
+/* ---- sayaç animasyonu ---- */
+(function(){
+  var sayaclar = document.querySelectorAll('[data-say]');
+  if(!sayaclar.length) return;
+  var azHareket = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function bitir(el){
+    el.textContent = el.getAttribute('data-say') + (el.getAttribute('data-son') || '');
+  }
+  if(azHareket || !('IntersectionObserver' in window)){
+    sayaclar.forEach(bitir); return;
+  }
+  var izci = new IntersectionObserver(function(gs){
+    gs.forEach(function(g){
+      if(!g.isIntersecting) return;
+      izci.unobserve(g.target);
+      var el = g.target;
+      var hedef = parseInt(el.getAttribute('data-say'), 10);
+      var son = el.getAttribute('data-son') || '';
+      if(hedef === 0){ bitir(el); return; }
+      var adim = 0, sure = 1100, basla = null;
+      function tik(t){
+        if(!basla) basla = t;
+        var oran = Math.min((t - basla) / sure, 1);
+        var yumusak = 1 - Math.pow(1 - oran, 3);
+        el.textContent = Math.round(hedef * yumusak) + son;
+        if(oran < 1) requestAnimationFrame(tik);
+      }
+      requestAnimationFrame(tik);
+    });
+  }, { threshold: .4 });
+  sayaclar.forEach(function(e){ izci.observe(e); });
+})();

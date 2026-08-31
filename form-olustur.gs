@@ -35,10 +35,10 @@ var AYARLAR = {
   formAdi: 'Yapay Zeka Okulu — Başvuru Formu',
 
   // Son başvuru tarihi (sadece metinde görünür)
-  sonTarih: '[gün ay 2026]',
+  sonTarih: '30 Ekim 2026',
 
-  // Doğum yılı aralığı (18–29 yaş için)
-  enKucukDogumYili: 1997,
+  // Doğum yılı aralığı (18–30 yaş için)
+  enKucukDogumYili: 1996,
   enBuyukDogumYili: 2008
 };
 
@@ -48,10 +48,12 @@ function kurulumuYap() {
   var form = FormApp.create(AYARLAR.formAdi);
 
   form.setDescription(
-    'Topkapı Üniversitesi\'nin 18–29 yaş gençlere yönelik ücretsiz yapay zeka, ' +
-    'girişimcilik ve proje yazma eğitimine hoş geldin.\n\n' +
+    'Topkapı Üniversitesi\'nin 18–30 yaş gençlere yönelik ücretsiz yapay zeka ve ' +
+    'girişimcilik eğitimine hoş geldin. Program 14 gün sürüyor: 8 gün eğitim, ' +
+    '4 gün teknokent ve sanayi gezisi, 2 gün sertifika töreni.\n\n' +
     'Bu formu doldurmak yaklaşık 3 dakika sürer. Kontenjan sınırlıdır; ' +
-    'şu an eğitimine devam etmeyen ve çalışmayan gençlere öncelik verilir.\n' +
+    'şu an eğitimine devam etmeyen ve çalışmayan gençlere öncelik verilir. ' +
+    '30 kontenjanın en az 20\'si kadın katılımcılara ayrılmıştır.\n' +
     'Sonuçlar telefon ve e-posta ile bildirilecektir.\n\n' +
     'Son başvuru: ' + AYARLAR.sonTarih + '\n' +
     'Bilgi: yapayzekaokulu.org\n\n' +
@@ -81,7 +83,7 @@ function kurulumuYap() {
   yil.setValidation(
     FormApp.createTextValidation()
       .requireNumberBetween(AYARLAR.enKucukDogumYili, AYARLAR.enBuyukDogumYili)
-      .setHelpText('Bu program 18–29 yaş arası gençler içindir.')
+      .setHelpText('Bu program 18–30 yaş arası gençler içindir.')
       .build()
   );
 
@@ -138,11 +140,11 @@ function kurulumuYap() {
     .setChoiceValues([
       'Yapay zeka araçlarını öğrenmek',
       'İçerik ve görsel üretimi',
-      'Kod yazmadan web sitesi ve uygulama yapmak',
+      'Yapay zeka ile chatbot ve otomasyon kurmak',
       'Kendi işimi kurmak, girişimcilik',
-      'Teknokent ve şirketleşme süreçleri',
-      'Proje yazma ve hibe başvurusu',
-      'İş bulmak, CV ve mülakat'
+      'Teknokent ve sanayi gezileri',
+      'İş modeli ve finansal planlama',
+      'İş bulmak ve profesyonel ağ kurmak'
     ])
     .setRequired(true);
 

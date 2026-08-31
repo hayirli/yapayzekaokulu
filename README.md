@@ -8,6 +8,7 @@ Yapay zeka + girişimcilik + proje yazma · 10 hafta · 18–29 yaş
 |---|---|
 | index.html | Ana sayfa (müfredat, proje hakkında, ekip, SSS) |
 | egitimler.html | Ders videoları (YouTube gömme) |
+| haberler.html | Haberler sayfası — haber eklemek için SADECE bu dosyayı düzenle |
 | kvkk.html | KVKK aydınlatma metni — hukuk biriminle kontrol et |
 | stil.css / site.js / favicon.svg | Tasarım ve animasyon |
 | logos/ | 4 kurum logosu — bkz. logos/OKU-BENI.txt |
@@ -105,3 +106,19 @@ Afişte adres düz metin duruyor; kağıttan bot toplayamaz, sorun değil.
 
 Kişisel adresin hiçbir yerde görünmez. Spam gelirse yönlendirmeyi kapatır,
 yeni bir rol adresi açarsın; afiş ve site aynı kalır.
+
+
+---
+
+## Haber nasıl eklenir
+
+`haberler.html` dosyasını aç. İçinde yorum satırı halinde bir haber şablonu var.
+Onu kopyala, yorum işaretlerini kaldır, tarihi ve metni değiştir, en üste koy.
+Başka hiçbir dosyaya dokunma — diğer sayfalar etkilenmez.
+
+Görsel istersen `gorseller/haber-1.jpg` gibi bir dosya at ve `img` satırını aç.
+Görsel yoksa renkli kutu görünür, site bozulmaz.
+
+Ana sayfadaki "Haberler" bölümü ayrı durur; oraya son üç haberi elle
+kopyalayabilirsin ya da boş bırakıp sadece "Tüm haberler" bağlantısını
+kullanabilirsin.
